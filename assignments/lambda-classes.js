@@ -12,7 +12,7 @@ class Person {
   }
 }
 
-class Instructor {
+class Instructor extends Person {
   constructor(instructorAttributes) {
     super(instructorAttributes);
     this.specialty = instructorAttributes.specialty;
@@ -27,7 +27,7 @@ class Instructor {
   }
 }
 
-class Student {
+class Student extends Person {
   constructor(studentAttributes) {
     super(studentAttributes);
     this.previousBackground = studentAttributes.previousBackground;
@@ -45,7 +45,7 @@ class Student {
   }
 }
 
-class ProjectManager {
+class ProjectManager extends Instructor {
   constructor(PMAttributes) {
     super(PMAttributes);
     this.gradClassName = PMAttributes.gradClassName;
