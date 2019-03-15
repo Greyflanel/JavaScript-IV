@@ -23,7 +23,7 @@ class Instructor extends Person {
     console.log(`Today we are learning about ${subject}`);
   }
   grade(student, subject) {
-    console.log(`${student.name} receives a perfect score on ${subject}`);
+    console.log(`${student.name} receives a perfect score in ${subject}`);
   }
 }
 
@@ -41,7 +41,7 @@ class Student extends Person {
     console.log(`${student.name} has submitted a PR for ${subject}`);
   }
   sprintChallenge(subject) {
-    console.log(`${student.name} had begun sprint challenge on ${subject}`);
+    console.log(`${student.name} has begun the Sprint Challenge in ${subject}`);
   }
 }
 
@@ -55,7 +55,7 @@ class ProjectManager extends Instructor {
     console.log(`${this.name} says, "Hey, Everybody in ${channel}, It's StandUp Time!"`);
   }
   debugsCode(student, subject) {
-    console.log(`${this.name} debugs ${student.name}'s code on ${subject}`);
+    console.log(`${this.name} debugs ${student.name}'s code in ${subject}`);
   }
 }
 
@@ -145,4 +145,9 @@ const mammalia = new ProjectManager({
     gradClassName: 'N/A',
     faveInstructor: 'Sean'
 })
-bamBam.listsSubjects();
+//bamBam.listsSubjects();
+//barney.demo('JavaScript');
+//barney.grade(pebbles, 'CSS')
+//dino.debugsCode(bamBam, 'HTML');
+//console.log(pebbles.speak());
+//mammalia.standUp('Web18');
